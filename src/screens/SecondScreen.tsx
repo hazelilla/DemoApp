@@ -1,13 +1,26 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import { Text, View } from 'react-native-ui-lib';
 import CustomHeader from '../components/CustomHeader';
+import { requestPermission } from '../utils/permissionUtil';
+import CustomButton from '../components/CustomButton';
 
 const SecondScreen: React.FC = () => {
+  const requestContactsPermission = async () => {
+    await requestPermission('CONTACTS');
+  };
+
+  const requestCalendarPermission = async () => {
+    await requestPermission('CALENDARS');
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <CustomHeader title="Second Screen" />
-      <View style={styles.content}>
-        <Text>This is the Second Screen</Text>
+      <View flex center>
+        <Text marginV-20>This is the Second Screen</Text>
+        <CustomButton title="Request Contacts Permission" onPress={requestContactsPermission} />
+        <CustomButton title="Request Calendar Permission" onPress={requestCalendarPermission} />
       </View>
     </SafeAreaView>
   );
@@ -16,12 +29,7 @@ const SecondScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  content: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+  }
 });
 
 export default SecondScreen;
