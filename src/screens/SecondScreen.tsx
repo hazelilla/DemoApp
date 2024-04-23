@@ -4,14 +4,19 @@ import { Text, View } from 'react-native-ui-lib';
 import CustomHeader from '../components/CustomHeader';
 import { requestPermission } from '../utils/permissionUtil';
 import CustomButton from '../components/CustomButton';
+import { useTranslation } from 'react-i18next';
 
 const SecondScreen: React.FC = () => {
+  const { t } = useTranslation();
+  const contactsPermissionReason = t('common:microphonePermissionReason');
+  const calendarPermissionReason = t('common:microphonePermissionReason');
+
   const requestContactsPermission = async () => {
-    await requestPermission('CONTACTS');
+    await requestPermission('CONTACTS', contactsPermissionReason);
   };
 
   const requestCalendarPermission = async () => {
-    await requestPermission('CALENDARS');
+    await requestPermission('CALENDARS', calendarPermissionReason);
   };
 
   return (
