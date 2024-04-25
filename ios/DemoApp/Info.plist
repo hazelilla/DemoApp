@@ -49,14 +49,14 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSContactsUsageDescription</key>
-	<string>__CONTACTS_PERMISSION_REASON__</string>
+	<string>This app needs access to your contacts to enchance communication.</string>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string>__CALENDAR_PERMISSION_REASON__</string>
+	<string>This app needs access to your calendar to schedule events.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>__CAMERA_PERMISSION_REASON__</string>
+	<string>This app needs access to your camera to take photos.</string>
 	<key>NSMicrophoneUsageDescription</key>	
-	<string>__MICROPHONE_PERMISSION_REASON__</string>
+	<string>This app needs access to your microphone for recording audio.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>__PHOTO_LIBRARY_PERMISSION_REASON__</string>
+	<string>This app needs access to your photo library to save and access photos.</string>
 </dict>
 </plist>
