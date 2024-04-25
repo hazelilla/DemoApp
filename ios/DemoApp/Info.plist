@@ -49,14 +49,14 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSContactsUsageDescription</key>
-	<string></string>
+	<string>$(NSContactsUsageDescription)</string>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string></string>
+	<string>$(NSCalendarsFullAccessUsageDescription)</string>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>$(NSCameraUsageDescription)</string>
 	<key>NSMicrophoneUsageDescription</key>	
-	<string></string>
+	<string>$(NSMicrophoneUsageDescription)</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>$(NSPhotoLibraryUsageDescription)</string>
 </dict>
 </plist>
