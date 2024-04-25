@@ -4,7 +4,7 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDisplayName</key>
+	<key></key>
 	<string>DemoApp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
@@ -49,14 +49,14 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSContactsUsageDescription</key>
-	<string>This app needs access to your contacts to enchance communication.</string>
+	<string></string>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string>This app needs access to your calendar to schedule events.</string>
+	<string></string>
 	<key>NSCameraUsageDescription</key>
-	<string>This app needs access to your camera to take photos.</string>
+	<string></string>
 	<key>NSMicrophoneUsageDescription</key>	
-	<string>This app needs access to your microphone for recording audio.</string>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app needs access to your photo library to save and access photos.</string>
+	<string></string>
 </dict>
 </plist>

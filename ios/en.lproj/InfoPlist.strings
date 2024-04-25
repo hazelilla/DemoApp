@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DemoApp
+
+  Created by Popleads on 25.04.2024.
+  
+*/
+
+"NSContactsUsageDescription" = "This app needs access to your contacts to enchance communication.";
+"NSCalendarsFullAccessUsageDescription" = "This app needs access to your calendar to schedule events.";
+"NSCameraUsageDescription" = "This app needs access to your camera to take photos.";
+"NSMicrophoneUsageDescription" = "This app needs access to your microphone for recording audio.";
+"NSPhotoLibraryUsageDescription" = "This app needs access to your photo library to save and access photos.";
+"CFBundleDisplayName" = "Milky Way";

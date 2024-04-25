@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DemoApp
+
+  Created by Popleads on 25.04.2024.
+  
+*/
+
+"NSContactsUsageDescription" = "Оваа апликација бара пристап до вашите контакти за подобрување на комуникацијата.";
+"NSCalendarsFullAccessUsageDescription" = "Оваа апликација бара пристап до вашиот календар за закажување на настани.";
+"NSCameraUsageDescription" = "Оваа апликација бара дозвола за фотографирање.";
+"NSMicrophoneUsageDescription" = "Оваа апликација бара пристап до микрофонот за снимање на аудио.";
+"NSPhotoLibraryUsageDescription" = "Оваа апликација бара пристап до вашата фото библиотека за зачувување и пристап до фотографии.";
+"CFBundleDisplayName" = "Млечен Пат";

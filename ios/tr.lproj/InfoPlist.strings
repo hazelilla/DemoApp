@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DemoApp
+
+  Created by Popleads on 25.04.2024.
+  
+*/
+
+"NSContactsUsageDescription" = "Bu uygulama, iletişimi geliştirmek için kişilerinize erişim gerektiriyor.";
+"NSCalendarsFullAccessUsageDescription" = "Bu uygulama, etkinlikleri planlamak için takviminize erişim gerektiriyor.";
+"NSCameraUsageDescription" = "Bu uygulama fotoğraf çekebilmek için izin gerektiriyor.";
+"NSMicrophoneUsageDescription" = "Bu uygulama ses kaydı yapmak için mikrofonunuza erişim gerektiriyor.";
+"NSPhotoLibraryUsageDescription" = "Bu uygulama fotoğraf kitaplığınıza erişim sağlamak ve fotoğraflara ulaşmak için izin gerektiriyor.";
+"CFBundleDisplayName" = "Samanyolu";

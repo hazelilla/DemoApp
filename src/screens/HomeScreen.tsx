@@ -5,8 +5,6 @@ import CustomButton from '../components/CustomButton';
 import CustomHeader from '../components/CustomHeader';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { requestPermission } from '../utils/permissionUtil';
-import { useTranslation } from 'react-i18next';
-
 
 type RootStackParamList = {
   HomeScreen: undefined;
@@ -20,25 +18,21 @@ interface HomeScreenProps {
 }
 
 const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
-  const { t } = useTranslation();
-  const cameraPermissionReason = t('common:cameraPermissionReason');
-  const microphonePermissionReason = t('common:microphonePermissionReason');
-  const photoLibraryPermissionReason = t('common:photoLibraryPermissionReason');
 
   const goToSecondScreen = () => {
     navigation.navigate('SecondScreen');
   };
 
   const requestCameraPermission = async () => {
-    await requestPermission('CAMERA', cameraPermissionReason);
+    await requestPermission('CAMERA');
   };
 
   const requestMicrophonePermission = async () => {
-    await requestPermission('MICROPHONE', microphonePermissionReason);
+    await requestPermission('MICROPHONE');
   };
 
   const requestPhotoLibraryPermission = async () => {
-    await requestPermission('PHOTO_LIBRARY', photoLibraryPermissionReason);
+    await requestPermission('PHOTO_LIBRARY');
   };
 
   return (
