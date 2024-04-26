@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { Text, View } from 'react-native-ui-lib';
+import { StyleSheet, Text, View } from 'react-native';
 
 interface CustomHeaderProps {
   title: string;
@@ -8,13 +7,19 @@ interface CustomHeaderProps {
 
 const CustomHeader: React.FC<CustomHeaderProps> = ({ title }) => {
   return (
-    <View padding-10 center backgroundColor='lightblue'>
+    <View style={styles.headerWrapper}>
       <Text style={styles.headerText}>{title}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  headerWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'lightblue',
+    padding: 10
+  },
   headerText: {
     fontSize: 20,
   },

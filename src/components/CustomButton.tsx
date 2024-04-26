@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { Text, TouchableOpacity } from 'react-native-ui-lib';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 interface CustomButtonProps {
   title: string;
@@ -10,15 +9,21 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ title, color, onPress }) => {
   return (
-    <TouchableOpacity marginV-10 padding-10 backgroundColor={color ? color : 'blue'} style={styles.button} onPress={onPress}>
-      <Text center color='white'>{title}</Text>
+    <TouchableOpacity style={{ ...styles.button, backgroundColor: color ? color : 'blue' }} onPress={onPress}>
+      <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
+  buttonText: {
+    justifyContent: 'center',
+    color: 'white'
+  },
   button: {
     borderRadius: 5,
+    marginVertical: 10,
+    padding: 10
   }
 });
 
